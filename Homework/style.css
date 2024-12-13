@@ -1,0 +1,43 @@
+#H1 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    color: white;
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+    animation-delay: 2s; 
+}
+
+#H1:hover {
+    background-color: red;
+    width: 225px;
+    height: 225px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+button:hover {
+    background-color: red;
+    width: 225px;
+    height: 225px;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+@keyframes anime {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(200px, 0);}
+    50% {transform: translate(200px, 200px);}
+    75% {transform: translate(0, 200px);}
+    100% {transform: translate(0, 0);}
+}
